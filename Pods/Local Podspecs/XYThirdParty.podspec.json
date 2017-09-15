@@ -1,0 +1,101 @@
+{
+  "name": "XYThirdParty",
+  "version": "0.0.1",
+  "summary": "XYThirdParty Source .",
+  "description": "xyzhenu framework",
+  "homepage": "https://github.com/XYZhenu",
+  "license": {
+    "type": "Copyright",
+    "text": "        copyright\n"
+  },
+  "authors": {
+    "xyzhenu": "1515489649@qq.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "xcconfig": {
+    "OTHER_LINK_FLAG": "$(inherited) -ObjC"
+  },
+  "user_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "'$(PODS_ROOT)/XYThirdParty'"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "XYThirdParty/*Extention/*.{h,m}",
+        "XYThirdParty/XY*/*.{h,m}",
+        "XYThirdParty/XYThirdParty.h"
+      ],
+      "resources": "XYThirdParty/**/*.png",
+      "requires_arc": true,
+      "dependencies": {
+        "TZImagePickerController": [
+
+        ],
+        "TAPageControl": [
+
+        ],
+        "AFNetworking": [
+
+        ],
+        "CocoaLumberjack": [
+
+        ],
+        "NJKWebViewProgress": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "MJRefresh": [
+
+        ],
+        "MZTimerLabel": [
+
+        ],
+        "GVUserDefaults": [
+
+        ],
+        "Toast": [
+
+        ]
+      }
+    },
+    {
+      "name": "JSON",
+      "source_files": "XYThirdParty/JSON/*.{h,m}",
+      "requires_arc": false
+    },
+    {
+      "name": "RichText",
+      "source_files": "XYThirdParty/RichText/*.{h,m}",
+      "requires_arc": true,
+      "dependencies": {
+        "YYText": [
+
+        ],
+        "YYImage": [
+
+        ],
+        "TZImagePickerController": [
+
+        ]
+      }
+    },
+    {
+      "name": "FlyImage",
+      "source_files": "XYThirdParty/FlyImageManager/*.{h,m}",
+      "requires_arc": true,
+      "dependencies": {
+        "FlyImage": [
+
+        ]
+      }
+    }
+  ]
+}

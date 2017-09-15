@@ -1,0 +1,42 @@
+{
+  "name": "XYCategory",
+  "version": "0.0.1",
+  "summary": "XYCategory Source .",
+  "description": "xyzhenu framework",
+  "homepage": "https://github.com/XYZhenu",
+  "license": {
+    "type": "Copyright",
+    "text": "        copyright\n"
+  },
+  "authors": {
+    "xyzhenu": "1515489649@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "user_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "'$(PODS_ROOT)/XYCategory'"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "XYCategory/XYCategory/**/*.{h,m}",
+      "exclude_files": "XYCategory/XYCategory/Location/*",
+      "resources": "XYCategory/XYCategory/*.bundle",
+      "requires_arc": true,
+      "xcconfig": {
+        "OTHER_LINK_FLAG": "$(inherited) -ObjC"
+      },
+      "frameworks": "UserNotifications"
+    },
+    {
+      "name": "Location",
+      "source_files": "XYCategory/XYCategory/Location/*.{h,m}",
+      "requires_arc": true,
+      "frameworks": "CoreLocation"
+    }
+  ]
+}

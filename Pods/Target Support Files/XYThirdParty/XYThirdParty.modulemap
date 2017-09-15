@@ -1,0 +1,6 @@
+framework module XYThirdParty {
+  umbrella header "XYThirdParty-umbrella.h"
+
+  export *
+  module * { export * }
+}
