@@ -1,0 +1,6 @@
+framework module Pods_taobaoTests {
+  umbrella header "Pods-taobaoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
