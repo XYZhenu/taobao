@@ -14,9 +14,8 @@ class TopKeywordsTest: XCTestCase {
         let expectResult = self.expectation(description: "expect result")
         
         let tops = TopKeywords()
-        tops.getKeyWords { (result) in
-            XCTAssertNotNil(result, "failed")
-            XCTAssert(result!.count == 20, "should have 20 value")
+        tops.getKeywords { (result) in
+            XCTAssert(result.count >= 20, "should have 20+ value")
             expectResult.fulfill()
         }
         

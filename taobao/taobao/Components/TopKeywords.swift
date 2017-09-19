@@ -10,11 +10,32 @@ import Ono
 import JavaScriptCore
 
 protocol TopKeywordsProtocol {
-    func getKeyWords(result: @escaping ([String]?)->Void)
+    func getKeywords(result: @escaping ([String])->Void)
 }
 class TopKeywords: TopKeywordsProtocol {
-    func getKeyWords(result: @escaping ([String]?)->Void) {
-        let request = NSMutableURLRequest(url: URL(string: "https://top.taobao.com/index.php?rank=focus&type=up")!)
+    func getKeywords(result: @escaping ([String]) -> Void) {
+        var set = Set<String>()
+        var count = 0
+        getUpKeyWords { (words) in
+            if let WORDS = words { set = set.union(WORDS) }
+            count += 1
+            if (count == 2) { result(set.map({ $0 })) }
+        }
+        getHotKeyWords { (words) in
+            if let WORDS = words { set = set.union(WORDS) }
+            count += 1
+            if (count == 2) { result(set.map({ $0 })) }
+        }
+    }
+    fileprivate func getHotKeyWords(result: @escaping ([String]?) -> Void) {
+        requestKeyWords(url: "https://top.taobao.com/index.php?rank=focus&type=hot", result: result)
+    }
+    fileprivate func getUpKeyWords(result: @escaping ([String]?) -> Void) {
+        requestKeyWords(url: "https://top.taobao.com/index.php?rank=focus&type=up", result: result)
+    }
+    
+    fileprivate func requestKeyWords(url:String, result: @escaping ([String]?)->Void) {
+        let request = NSMutableURLRequest(url: URL(string: url)!)
         
         XYZHttp.instance().request(request, serializerType: XYSerializerType.origin, uploadProgress: nil, downloadProgress: nil, complete: { (_, res, error) in
             var returnStrings:[String]? = nil
