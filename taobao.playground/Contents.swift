@@ -27,13 +27,9 @@ do {
     }
 }
 
-var outputs = [String]()
+var outputs = [[String:Any]]()
 do {
     let document = try ONOXMLDocument(string: str, encoding: String.Encoding.utf8.rawValue)
-    for child in document.rootElement.children {
-        let element = child as! ONOXMLElement
-        print(element.tag)
-    }
     document.rootElement.enumerateElements(withXPath: "//script", using: { (scriptElement, index, stop) in
         if var scriptStr = scriptElement!.stringValue(), scriptStr.contains("g_page_config") {
             stop?.pointee = ObjCBool(true)
@@ -41,20 +37,21 @@ do {
             if let g_page_config = jsContext.objectForKeyedSubscript("g_page_config"),
                 let dic = g_page_config.toDictionary(),
                 let mods = dic["mods"] as? [String:Any],
-                let p4p = mods["p4p"] as? [String:Any],
-                let data = p4p["data"] as? [String:Any],
-                let p4pdata = data["p4pdata"] as? String {
-                jsContext.evaluateScript("let p4pdata = "+p4pdata)
-                if let p4pdataJS = jsContext.objectForKeyedSubscript("p4pdata"),
-                    let p4pdataDic = g_page_config.toDictionary() {
-                    print(p4pdataDic)
-                }
+                let itemlist = mods["itemlist"] as? [String:Any],
+                let data = itemlist["data"] as? [String:Any],
+                let auctions = data["auctions"] as? [[String:Any]] {
+                outputs.append(contentsOf: auctions.map({ (item)  in
+                    var converted = [String:String]()
+                    if let user_id = item["user_id"] as? String { converted["user_id"] = user_id }
+                    if let nick = item["nick"] as? String { converted["nick"] = nick }
+                    return converted
+                }))
             }
         }
         
     })
-    
 } catch let error {
     
 }
+let first = outputs.first!
 
