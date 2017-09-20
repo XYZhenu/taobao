@@ -38,13 +38,14 @@ class TopShops: TopShopsProtocol {
     }
     fileprivate func getTopShop(keyWord:String, page:Int, result: @escaping ([[String:String]]) -> Void) {
         let pagesize = 44 * page
-        let urlString = "https://s.taobao.com/search?q=\(keyWord)&fs=1&baoyou=1&auction_tag[]=4806&bcoffset=\(pagesize)".addingPercentEncoding(withAllowedCharacters:
+        let urlString = "https://s.taobao.com/search?q=\(keyWord)&fs=1&baoyou=1&auction_tag[]=4806&bcoffset=0&p4ppushleft=%2C44&s=\(pagesize)".addingPercentEncoding(withAllowedCharacters:
             .urlQueryAllowed) ?? ""
+        print(urlString)
         let request = NSMutableURLRequest(url: URL(string: urlString)!)
         
         XYZHttp.instance().request(request, serializerType: XYSerializerType.origin, uploadProgress: nil, downloadProgress: nil, complete: { (_, res, error) in
             var outputs = [[String:String]]()
-            if let data = res as? Data, let str = String(data: data, encoding: String.Encoding.ascii) {
+            if let data = res as? Data, let str = String(data: data, encoding: String.Encoding.utf8) {
                 let jsContext = JSContext()!
                 
                 do {

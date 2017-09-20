@@ -19,14 +19,14 @@ do {
 } catch let error {
     let url = URL(string: urlString)!
     let data = try Data(contentsOf: url)
-    str =  String(data: data, encoding: String.Encoding.ascii)!
+    str =  String(data: data, encoding: String.Encoding.utf8)!
     do {
         try str.write(toFile: filepath, atomically: true, encoding: String.Encoding.utf8)
     } catch let error {
         print(error)
+        print("errot")
     }
 }
-
 var outputs = [[String:Any]]()
 do {
     let document = try ONOXMLDocument(string: str, encoding: String.Encoding.utf8.rawValue)
@@ -41,17 +41,15 @@ do {
                 let data = itemlist["data"] as? [String:Any],
                 let auctions = data["auctions"] as? [[String:Any]] {
                 outputs.append(contentsOf: auctions.map({ (item)  in
-                    var converted = [String:String]()
-                    if let user_id = item["user_id"] as? String { converted["user_id"] = user_id }
-                    if let nick = item["nick"] as? String { converted["nick"] = nick }
-                    return converted
+//                    var converted = [String:String]()
+//                    if let user_id = item["user_id"] as? String { converted["user_id"] = user_id }
+//                    if let nick = item["nick"] as? String { converted["nick"] = nick }
+                    return item
                 }))
             }
         }
-        
     })
 } catch let error {
     
 }
-let first = outputs.first!
-
+print(outputs.first!)

@@ -39,7 +39,7 @@ class TopKeywords: TopKeywordsProtocol {
         
         XYZHttp.instance().request(request, serializerType: XYSerializerType.origin, uploadProgress: nil, downloadProgress: nil, complete: { (_, res, error) in
             var returnStrings:[String]? = nil
-            if let data = res as? Data, let str = String(data: data, encoding: String.Encoding.ascii) {
+            if let data = res as? Data, let str = String(data: data, encoding: String.Encoding.utf8) {
                 let jsContext = JSContext()!
                 do {
                     let document = try ONOXMLDocument(string: str, encoding: String.Encoding.utf8.rawValue)

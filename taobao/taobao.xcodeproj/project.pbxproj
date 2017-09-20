@@ -15,6 +15,7 @@
 		8138D7441F6BB6F700BBBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8138D7431F6BB6F700BBBEC2 /* Assets.xcassets */; };
 		8138D7471F6BB6F700BBBEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8138D7451F6BB6F700BBBEC2 /* LaunchScreen.storyboard */; };
 		8138D7521F6BB6F700BBBEC2 /* taobaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138D7511F6BB6F700BBBEC2 /* taobaoTests.m */; };
+		8138D7651F72355500BBBEC2 /* ShopFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8138D7641F72355500BBBEC2 /* ShopFilter.swift */; };
 		8596FC1879DB7309F73A114A /* Pods_taobaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF853F3CED5C86AC6DFE8485 /* Pods_taobaoTests.framework */; };
 		AC24D81C1F6FA63E00796C3C /* TopKeywordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D81B1F6FA63E00796C3C /* TopKeywordsTests.swift */; };
 		AC24D8201F6FC8D600796C3C /* XYZHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24D81F1F6FC8D600796C3C /* XYZHttp.m */; };
@@ -52,6 +53,7 @@
 		8138D7531F6BB6F700BBBEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8138D7601F6BCA6800BBBEC2 /* taobao-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "taobao-Bridging-Header.h"; sourceTree = "<group>"; };
 		8138D7611F6BCADA00BBBEC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8138D7641F72355500BBBEC2 /* ShopFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopFilter.swift; sourceTree = "<group>"; };
 		826FB2F812FB86F0F8F18D26 /* Pods-taobao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taobao.release.xcconfig"; path = "../Pods/Target Support Files/Pods-taobao/Pods-taobao.release.xcconfig"; sourceTree = "<group>"; };
 		AC24D81A1F6FA63E00796C3C /* taobaoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taobaoTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		AC24D81B1F6FA63E00796C3C /* TopKeywordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopKeywordsTests.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				AC24D8231F70C22C00796C3C /* TopKeywords.swift */,
 				AC24D8251F70C2F100796C3C /* TopShops.swift */,
+				8138D7641F72355500BBBEC2 /* ShopFilter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				AC24D8261F70C2F100796C3C /* TopShops.swift in Sources */,
 				AC24D8241F70C22C00796C3C /* TopKeywords.swift in Sources */,
 				8138D73C1F6BB6F700BBBEC2 /* AppDelegate.m in Sources */,
+				8138D7651F72355500BBBEC2 /* ShopFilter.swift in Sources */,
 				8138D7391F6BB6F700BBBEC2 /* main.m in Sources */,
 				AC24D8201F6FC8D600796C3C /* XYZHttp.m in Sources */,
 			);
