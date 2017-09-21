@@ -14,12 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.2.0):
-    - CocoaLumberjack/Default (= 3.2.0)
-    - CocoaLumberjack/Extensions (= 3.2.0)
-  - CocoaLumberjack/Default (3.2.0)
-  - CocoaLumberjack/Extensions (3.2.0):
-    - CocoaLumberjack/Default
   - FlyImage (1.0):
     - AFNetworking (~> 3.1)
     - FlyImage/Core (= 1.0)
@@ -50,7 +44,6 @@ PODS:
     - XYThirdParty/RichText (= 0.0.1)
   - XYThirdParty/Core (0.0.1):
     - AFNetworking
-    - CocoaLumberjack
     - GVUserDefaults
     - MBProgressHUD
     - MJRefresh
@@ -78,13 +71,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   XYCategory:
-    :path: ~/Documents/GitHub/XYCategory
+    :path: "~/Documents/GitHub/XYCategory"
   XYThirdParty:
-    :path: ~/Documents/GitHub/XYThirdParty
+    :path: "~/Documents/GitHub/XYThirdParty"
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
   FlyImage: 4a39cbc95b5a40cbec6a5ea5747f978e50c8e732
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -96,7 +88,7 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
   XYCategory: 22824182abfd383487f4adb065503fda5cf6176f
-  XYThirdParty: 071d97dfc5ead254c1f67b29ea40f15ae46661d6
+  XYThirdParty: 55876ffab4771e22dad507c0ec491f3d911197ff
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 

@@ -72,7 +72,7 @@
     
     
     if ([bodyParma isKindOfClass:[NSDictionary class]] && [bodyParma count]>0) {
-        DDLogDebug(@"%@ \n%@",url,bodyParma);
+//        DDLogDebug(@"%@ \n%@",url,bodyParma);
         NSString* bodyJson = [bodyParma JSONString];
         request.HTTPBody = [bodyJson dataUsingEncoding:NSUTF8StringEncoding];
     }else if ([bodyParma isKindOfClass:[NSData class]]){

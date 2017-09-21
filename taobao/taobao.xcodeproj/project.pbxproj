@@ -15,13 +15,13 @@
 		8138D7441F6BB6F700BBBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8138D7431F6BB6F700BBBEC2 /* Assets.xcassets */; };
 		8138D7471F6BB6F700BBBEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8138D7451F6BB6F700BBBEC2 /* LaunchScreen.storyboard */; };
 		8138D7521F6BB6F700BBBEC2 /* taobaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138D7511F6BB6F700BBBEC2 /* taobaoTests.m */; };
-		8138D7651F72355500BBBEC2 /* ShopFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8138D7641F72355500BBBEC2 /* ShopFilter.swift */; };
 		8596FC1879DB7309F73A114A /* Pods_taobaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF853F3CED5C86AC6DFE8485 /* Pods_taobaoTests.framework */; };
-		AC24D81C1F6FA63E00796C3C /* TopKeywordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D81B1F6FA63E00796C3C /* TopKeywordsTests.swift */; };
 		AC24D8201F6FC8D600796C3C /* XYZHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24D81F1F6FC8D600796C3C /* XYZHttp.m */; };
 		AC24D8241F70C22C00796C3C /* TopKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D8231F70C22C00796C3C /* TopKeywords.swift */; };
-		AC24D8261F70C2F100796C3C /* TopShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D8251F70C2F100796C3C /* TopShops.swift */; };
-		AC49730A1F70D56C00E04AFF /* TopShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4973091F70D56C00E04AFF /* TopShopsTests.swift */; };
+		ACE879931F73C408007AD357 /* ShopFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8138D7641F72355500BBBEC2 /* ShopFilter.swift */; };
+		ACE879941F73C40C007AD357 /* TopShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D8251F70C2F100796C3C /* TopShops.swift */; };
+		ACE879951F73C410007AD357 /* TopSellers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8798C1F73BF80007AD357 /* TopSellers.swift */; };
+		ACE879991F73C684007AD357 /* GetHotItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE879981F73C684007AD357 /* GetHotItemsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +56,13 @@
 		8138D7641F72355500BBBEC2 /* ShopFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopFilter.swift; sourceTree = "<group>"; };
 		826FB2F812FB86F0F8F18D26 /* Pods-taobao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taobao.release.xcconfig"; path = "../Pods/Target Support Files/Pods-taobao/Pods-taobao.release.xcconfig"; sourceTree = "<group>"; };
 		AC24D81A1F6FA63E00796C3C /* taobaoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taobaoTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		AC24D81B1F6FA63E00796C3C /* TopKeywordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopKeywordsTests.swift; sourceTree = "<group>"; };
 		AC24D81E1F6FC8D600796C3C /* XYZHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZHttp.h; sourceTree = "<group>"; };
 		AC24D81F1F6FC8D600796C3C /* XYZHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZHttp.m; sourceTree = "<group>"; };
-		AC24D8211F70023200796C3C /* taobao.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = taobao.playground; path = ../taobao.playground; sourceTree = "<group>"; };
+		AC24D8211F70023200796C3C /* taobao.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = taobao.playground; path = ../taobao.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AC24D8231F70C22C00796C3C /* TopKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopKeywords.swift; sourceTree = "<group>"; };
 		AC24D8251F70C2F100796C3C /* TopShops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopShops.swift; sourceTree = "<group>"; };
-		AC4973091F70D56C00E04AFF /* TopShopsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopShopsTests.swift; sourceTree = "<group>"; };
+		ACE8798C1F73BF80007AD357 /* TopSellers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSellers.swift; sourceTree = "<group>"; };
+		ACE879981F73C684007AD357 /* GetHotItemsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHotItemsTests.swift; sourceTree = "<group>"; };
 		C34595C1C00882A62640079C /* Pods-taobao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taobao.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-taobao/Pods-taobao.debug.xcconfig"; sourceTree = "<group>"; };
 		CF853F3CED5C86AC6DFE8485 /* Pods_taobaoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taobaoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,9 +148,8 @@
 		8138D7501F6BB6F700BBBEC2 /* taobaoTests */ = {
 			isa = PBXGroup;
 			children = (
+				ACE879981F73C684007AD357 /* GetHotItemsTests.swift */,
 				8138D7511F6BB6F700BBBEC2 /* taobaoTests.m */,
-				AC24D81B1F6FA63E00796C3C /* TopKeywordsTests.swift */,
-				AC4973091F70D56C00E04AFF /* TopShopsTests.swift */,
 				8138D7531F6BB6F700BBBEC2 /* Info.plist */,
 				AC24D81A1F6FA63E00796C3C /* taobaoTests-Bridging-Header.h */,
 			);
@@ -182,6 +181,7 @@
 			children = (
 				AC24D8231F70C22C00796C3C /* TopKeywords.swift */,
 				AC24D8251F70C2F100796C3C /* TopShops.swift */,
+				ACE8798C1F73BF80007AD357 /* TopSellers.swift */,
 				8138D7641F72355500BBBEC2 /* ShopFilter.swift */,
 			);
 			path = Components;
@@ -390,13 +390,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE879951F73C410007AD357 /* TopSellers.swift in Sources */,
 				8138D73F1F6BB6F700BBBEC2 /* ViewController.m in Sources */,
-				AC24D8261F70C2F100796C3C /* TopShops.swift in Sources */,
 				AC24D8241F70C22C00796C3C /* TopKeywords.swift in Sources */,
 				8138D73C1F6BB6F700BBBEC2 /* AppDelegate.m in Sources */,
-				8138D7651F72355500BBBEC2 /* ShopFilter.swift in Sources */,
+				ACE879931F73C408007AD357 /* ShopFilter.swift in Sources */,
 				8138D7391F6BB6F700BBBEC2 /* main.m in Sources */,
 				AC24D8201F6FC8D600796C3C /* XYZHttp.m in Sources */,
+				ACE879941F73C40C007AD357 /* TopShops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,8 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8138D7521F6BB6F700BBBEC2 /* taobaoTests.m in Sources */,
-				AC24D81C1F6FA63E00796C3C /* TopKeywordsTests.swift in Sources */,
-				AC49730A1F70D56C00E04AFF /* TopShopsTests.swift in Sources */,
+				ACE879991F73C684007AD357 /* GetHotItemsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DE7CAC287BB0DED5954DCCF776A1B299"
+               BlueprintIdentifier = "71DB1DF75404DA640FCBE24B73B41515"
                BuildableName = "Pods_taobao.framework"
                BlueprintName = "Pods-taobao"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DE7CAC287BB0DED5954DCCF776A1B299"
+            BlueprintIdentifier = "71DB1DF75404DA640FCBE24B73B41515"
             BuildableName = "Pods_taobao.framework"
             BlueprintName = "Pods-taobao"
             ReferencedContainer = "container:Pods.xcodeproj">
