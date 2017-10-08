@@ -1,0 +1,6 @@
+framework module Pods_taobaoMac {
+  umbrella header "Pods-taobaoMac-umbrella.h"
+
+  export *
+  module * { export * }
+}
